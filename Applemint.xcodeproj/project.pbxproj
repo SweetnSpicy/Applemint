@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180E6C911C5D5480004D10AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6C901C5D5480004D10AB /* AppDelegate.swift */; };
+		180E6C931C5D5480004D10AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6C921C5D5480004D10AB /* ViewController.swift */; };
+		180E6C961C5D5480004D10AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180E6C941C5D5480004D10AB /* Main.storyboard */; };
+		180E6C981C5D5480004D10AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180E6C971C5D5480004D10AB /* Assets.xcassets */; };
+		180E6C9B1C5D5480004D10AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180E6C991C5D5480004D10AB /* LaunchScreen.storyboard */; };
+		180E6CA61C5D5480004D10AB /* ApplemintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6CA51C5D5480004D10AB /* ApplemintTests.swift */; };
+		180E6CB11C5D5481004D10AB /* ApplemintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6CB01C5D5481004D10AB /* ApplemintUITests.swift */; };
+		180E6CBF1C5D550E004D10AB /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6CBE1C5D550E004D10AB /* PageItemController.swift */; };
+		180E6CC11C5D5C67004D10AB /* happy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 180E6CC01C5D5C67004D10AB /* happy.txt */; };
+		180E6CC31C5D5E4C004D10AB /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6CC21C5D5E4C004D10AB /* Phrase.swift */; };
+		180E6CC51C5D6375004D10AB /* sad.txt in Resources */ = {isa = PBXBuildFile; fileRef = 180E6CC41C5D6375004D10AB /* sad.txt */; };
+		184BF2BA1C5EADD0004D54C6 /* ApplemintWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 184BF2B91C5EADD0004D54C6 /* ApplemintWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		184BF2CB1C5EADD0004D54C6 /* ApplemintWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 184BF2AD1C5EADD0004D54C6 /* ApplemintWatch.app */; };
+		18F7BB121C5DB44E00631DE6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7BB111C5DB44E00631DE6 /* AboutViewController.swift */; };
+		18F7BB141C5DCFC200631DE6 /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18F7BB131C5DCFC200631DE6 /* about.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180E6CA21C5D5480004D10AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180E6C851C5D5480004D10AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180E6C8C1C5D5480004D10AB;
+			remoteInfo = Applemint;
+		};
+		180E6CAD1C5D5481004D10AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180E6C851C5D5480004D10AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180E6C8C1C5D5480004D10AB;
+			remoteInfo = Applemint;
+		};
+		184BF2BB1C5EADD0004D54C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180E6C851C5D5480004D10AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184BF2B81C5EADD0004D54C6;
+			remoteInfo = "ApplemintWatch Extension";
+		};
+		184BF2C91C5EADD0004D54C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180E6C851C5D5480004D10AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184BF2AC1C5EADD0004D54C6;
+			remoteInfo = ApplemintWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		184BF2D11C5EADD0004D54C6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				184BF2BA1C5EADD0004D54C6 /* ApplemintWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BF2D31C5EADD0004D54C6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				184BF2CB1C5EADD0004D54C6 /* ApplemintWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		180E6C8D1C5D5480004D10AB /* Applemint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applemint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E6C901C5D5480004D10AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180E6C921C5D5480004D10AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180E6C951C5D5480004D10AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180E6C971C5D5480004D10AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180E6C9A1C5D5480004D10AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180E6C9C1C5D5480004D10AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180E6CA11C5D5480004D10AB /* ApplemintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplemintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E6CA51C5D5480004D10AB /* ApplemintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplemintTests.swift; sourceTree = "<group>"; };
+		180E6CA71C5D5480004D10AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180E6CAC1C5D5481004D10AB /* ApplemintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplemintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E6CB01C5D5481004D10AB /* ApplemintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplemintUITests.swift; sourceTree = "<group>"; };
+		180E6CB21C5D5481004D10AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180E6CBE1C5D550E004D10AB /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		180E6CC01C5D5C67004D10AB /* happy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = happy.txt; sourceTree = "<group>"; };
+		180E6CC21C5D5E4C004D10AB /* Phrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		180E6CC41C5D6375004D10AB /* sad.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sad.txt; sourceTree = "<group>"; };
+		184BF2AD1C5EADD0004D54C6 /* ApplemintWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplemintWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184BF2B91C5EADD0004D54C6 /* ApplemintWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ApplemintWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F7BB111C5DB44E00631DE6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../AboutViewController.swift; sourceTree = "<group>"; };
+		18F7BB131C5DCFC200631DE6 /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180E6C8A1C5D5480004D10AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6C9E1C5D5480004D10AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6CA91C5D5481004D10AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BF2B61C5EADD0004D54C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180E6C841C5D5480004D10AB = {
+			isa = PBXGroup;
+			children = (
+				180E6C8F1C5D5480004D10AB /* Applemint */,
+				180E6CA41C5D5480004D10AB /* ApplemintTests */,
+				180E6CAF1C5D5481004D10AB /* ApplemintUITests */,
+				180E6C8E1C5D5480004D10AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180E6C8E1C5D5480004D10AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180E6C8D1C5D5480004D10AB /* Applemint.app */,
+				180E6CA11C5D5480004D10AB /* ApplemintTests.xctest */,
+				180E6CAC1C5D5481004D10AB /* ApplemintUITests.xctest */,
+				184BF2AD1C5EADD0004D54C6 /* ApplemintWatch.app */,
+				184BF2B91C5EADD0004D54C6 /* ApplemintWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180E6C8F1C5D5480004D10AB /* Applemint */ = {
+			isa = PBXGroup;
+			children = (
+				18F7BB111C5DB44E00631DE6 /* AboutViewController.swift */,
+				18F7BB131C5DCFC200631DE6 /* about.txt */,
+				180E6C901C5D5480004D10AB /* AppDelegate.swift */,
+				180E6C921C5D5480004D10AB /* ViewController.swift */,
+				180E6C941C5D5480004D10AB /* Main.storyboard */,
+				180E6CBE1C5D550E004D10AB /* PageItemController.swift */,
+				180E6CC21C5D5E4C004D10AB /* Phrase.swift */,
+				180E6C971C5D5480004D10AB /* Assets.xcassets */,
+				180E6C991C5D5480004D10AB /* LaunchScreen.storyboard */,
+				180E6C9C1C5D5480004D10AB /* Info.plist */,
+				180E6CC01C5D5C67004D10AB /* happy.txt */,
+				180E6CC41C5D6375004D10AB /* sad.txt */,
+			);
+			path = Applemint;
+			sourceTree = "<group>";
+		};
+		180E6CA41C5D5480004D10AB /* ApplemintTests */ = {
+			isa = PBXGroup;
+			children = (
+				180E6CA51C5D5480004D10AB /* ApplemintTests.swift */,
+				180E6CA71C5D5480004D10AB /* Info.plist */,
+			);
+			path = ApplemintTests;
+			sourceTree = "<group>";
+		};
+		180E6CAF1C5D5481004D10AB /* ApplemintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180E6CB01C5D5481004D10AB /* ApplemintUITests.swift */,
+				180E6CB21C5D5481004D10AB /* Info.plist */,
+			);
+			path = ApplemintUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180E6C8C1C5D5480004D10AB /* Applemint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180E6CB51C5D5481004D10AB /* Build configuration list for PBXNativeTarget "Applemint" */;
+			buildPhases = (
+				180E6C891C5D5480004D10AB /* Sources */,
+				180E6C8A1C5D5480004D10AB /* Frameworks */,
+				180E6C8B1C5D5480004D10AB /* Resources */,
+				184BF2D31C5EADD0004D54C6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184BF2CA1C5EADD0004D54C6 /* PBXTargetDependency */,
+			);
+			name = Applemint;
+			productName = Applemint;
+			productReference = 180E6C8D1C5D5480004D10AB /* Applemint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180E6CA01C5D5480004D10AB /* ApplemintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180E6CB81C5D5481004D10AB /* Build configuration list for PBXNativeTarget "ApplemintTests" */;
+			buildPhases = (
+				180E6C9D1C5D5480004D10AB /* Sources */,
+				180E6C9E1C5D5480004D10AB /* Frameworks */,
+				180E6C9F1C5D5480004D10AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180E6CA31C5D5480004D10AB /* PBXTargetDependency */,
+			);
+			name = ApplemintTests;
+			productName = ApplemintTests;
+			productReference = 180E6CA11C5D5480004D10AB /* ApplemintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180E6CAB1C5D5481004D10AB /* ApplemintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180E6CBB1C5D5481004D10AB /* Build configuration list for PBXNativeTarget "ApplemintUITests" */;
+			buildPhases = (
+				180E6CA81C5D5481004D10AB /* Sources */,
+				180E6CA91C5D5481004D10AB /* Frameworks */,
+				180E6CAA1C5D5481004D10AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180E6CAE1C5D5481004D10AB /* PBXTargetDependency */,
+			);
+			name = ApplemintUITests;
+			productName = ApplemintUITests;
+			productReference = 180E6CAC1C5D5481004D10AB /* ApplemintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		184BF2AC1C5EADD0004D54C6 /* ApplemintWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184BF2D21C5EADD0004D54C6 /* Build configuration list for PBXNativeTarget "ApplemintWatch" */;
+			buildPhases = (
+				184BF2AB1C5EADD0004D54C6 /* Resources */,
+				184BF2D11C5EADD0004D54C6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184BF2BC1C5EADD0004D54C6 /* PBXTargetDependency */,
+			);
+			name = ApplemintWatch;
+			productName = ApplemintWatch;
+			productReference = 184BF2AD1C5EADD0004D54C6 /* ApplemintWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		184BF2B81C5EADD0004D54C6 /* ApplemintWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184BF2D01C5EADD0004D54C6 /* Build configuration list for PBXNativeTarget "ApplemintWatch Extension" */;
+			buildPhases = (
+				184BF2B51C5EADD0004D54C6 /* Sources */,
+				184BF2B61C5EADD0004D54C6 /* Frameworks */,
+				184BF2B71C5EADD0004D54C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApplemintWatch Extension";
+			productName = "ApplemintWatch Extension";
+			productReference = 184BF2B91C5EADD0004D54C6 /* ApplemintWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180E6C851C5D5480004D10AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Applemint;
+				TargetAttributes = {
+					180E6C8C1C5D5480004D10AB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6QK3TK837U;
+					};
+					180E6CA01C5D5480004D10AB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 180E6C8C1C5D5480004D10AB;
+					};
+					180E6CAB1C5D5481004D10AB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 180E6C8C1C5D5480004D10AB;
+					};
+					184BF2AC1C5EADD0004D54C6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6QK3TK837U;
+					};
+					184BF2B81C5EADD0004D54C6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6QK3TK837U;
+					};
+				};
+			};
+			buildConfigurationList = 180E6C881C5D5480004D10AB /* Build configuration list for PBXProject "Applemint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180E6C841C5D5480004D10AB;
+			productRefGroup = 180E6C8E1C5D5480004D10AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180E6C8C1C5D5480004D10AB /* Applemint */,
+				180E6CA01C5D5480004D10AB /* ApplemintTests */,
+				180E6CAB1C5D5481004D10AB /* ApplemintUITests */,
+				184BF2AC1C5EADD0004D54C6 /* ApplemintWatch */,
+				184BF2B81C5EADD0004D54C6 /* ApplemintWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180E6C8B1C5D5480004D10AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E6C9B1C5D5480004D10AB /* LaunchScreen.storyboard in Resources */,
+				180E6C981C5D5480004D10AB /* Assets.xcassets in Resources */,
+				18F7BB141C5DCFC200631DE6 /* about.txt in Resources */,
+				180E6CC11C5D5C67004D10AB /* happy.txt in Resources */,
+				180E6CC51C5D6375004D10AB /* sad.txt in Resources */,
+				180E6C961C5D5480004D10AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6C9F1C5D5480004D10AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6CAA1C5D5481004D10AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BF2AB1C5EADD0004D54C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BF2B71C5EADD0004D54C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180E6C891C5D5480004D10AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E6CBF1C5D550E004D10AB /* PageItemController.swift in Sources */,
+				180E6C931C5D5480004D10AB /* ViewController.swift in Sources */,
+				180E6CC31C5D5E4C004D10AB /* Phrase.swift in Sources */,
+				18F7BB121C5DB44E00631DE6 /* AboutViewController.swift in Sources */,
+				180E6C911C5D5480004D10AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6C9D1C5D5480004D10AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E6CA61C5D5480004D10AB /* ApplemintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E6CA81C5D5481004D10AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E6CB11C5D5481004D10AB /* ApplemintUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184BF2B51C5EADD0004D54C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180E6CA31C5D5480004D10AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180E6C8C1C5D5480004D10AB /* Applemint */;
+			targetProxy = 180E6CA21C5D5480004D10AB /* PBXContainerItemProxy */;
+		};
+		180E6CAE1C5D5481004D10AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180E6C8C1C5D5480004D10AB /* Applemint */;
+			targetProxy = 180E6CAD1C5D5481004D10AB /* PBXContainerItemProxy */;
+		};
+		184BF2BC1C5EADD0004D54C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184BF2B81C5EADD0004D54C6 /* ApplemintWatch Extension */;
+			targetProxy = 184BF2BB1C5EADD0004D54C6 /* PBXContainerItemProxy */;
+		};
+		184BF2CA1C5EADD0004D54C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184BF2AC1C5EADD0004D54C6 /* ApplemintWatch */;
+			targetProxy = 184BF2C91C5EADD0004D54C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180E6C941C5D5480004D10AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180E6C951C5D5480004D10AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180E6C991C5D5480004D10AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180E6C9A1C5D5480004D10AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180E6CB31C5D5481004D10AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180E6CB41C5D5481004D10AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180E6CB61C5D5481004D10AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Applemint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		180E6CB71C5D5481004D10AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Applemint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		180E6CB91C5D5481004D10AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ApplemintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ApplemintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Applemint.app/Applemint";
+			};
+			name = Debug;
+		};
+		180E6CBA1C5D5481004D10AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ApplemintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ApplemintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Applemint.app/Applemint";
+			};
+			name = Release;
+		};
+		180E6CBC1C5D5481004D10AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ApplemintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ApplemintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Applemint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		180E6CBD1C5D5481004D10AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ApplemintUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ApplemintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Applemint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		184BF2CC1C5EADD0004D54C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = ApplemintWatch_Extension;
+				INFOPLIST_FILE = ApplemintWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		184BF2CD1C5EADD0004D54C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = ApplemintWatch_Extension;
+				INFOPLIST_FILE = ApplemintWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		184BF2CE1C5EADD0004D54C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ApplemintWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		184BF2CF1C5EADD0004D54C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ApplemintWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Applemint.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180E6C881C5D5480004D10AB /* Build configuration list for PBXProject "Applemint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E6CB31C5D5481004D10AB /* Debug */,
+				180E6CB41C5D5481004D10AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180E6CB51C5D5481004D10AB /* Build configuration list for PBXNativeTarget "Applemint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E6CB61C5D5481004D10AB /* Debug */,
+				180E6CB71C5D5481004D10AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180E6CB81C5D5481004D10AB /* Build configuration list for PBXNativeTarget "ApplemintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E6CB91C5D5481004D10AB /* Debug */,
+				180E6CBA1C5D5481004D10AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180E6CBB1C5D5481004D10AB /* Build configuration list for PBXNativeTarget "ApplemintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E6CBC1C5D5481004D10AB /* Debug */,
+				180E6CBD1C5D5481004D10AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184BF2D01C5EADD0004D54C6 /* Build configuration list for PBXNativeTarget "ApplemintWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184BF2CE1C5EADD0004D54C6 /* Debug */,
+				184BF2CF1C5EADD0004D54C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184BF2D21C5EADD0004D54C6 /* Build configuration list for PBXNativeTarget "ApplemintWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184BF2CC1C5EADD0004D54C6 /* Debug */,
+				184BF2CD1C5EADD0004D54C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180E6C851C5D5480004D10AB /* Project object */;
+}

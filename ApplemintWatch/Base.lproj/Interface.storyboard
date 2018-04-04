@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ApplemintWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="69.5" alignment="left" title="Quick Flirt" id="FVe-Bx-f4g">
+                            <connections>
+                                <segue destination="rhc-W5-1fw" kind="push" id="Ryq-IX-MhT"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="67.5" alignment="left" title="Fast Burn" id="qjJ-Eb-UZD">
+                            <connections>
+                                <segue destination="NaT-uL-3f1" kind="push" id="bnI-VL-EPI"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="231"/>
+        </scene>
+        <!--quickFlirt-->
+        <scene sceneID="2QI-TR-2GE">
+            <objects>
+                <controller identifier="quickFlirt" backgroundImage="compgalaxy" id="rhc-W5-1fw" customClass="quickFlirt" customModule="Applemint">
+                    <items>
+                        <label width="113.5" height="129.5" alignment="left" id="Lxx-Jb-MQt"/>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="contentWKLabel" destination="Lxx-Jb-MQt" id="anU-yR-wOE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="111"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--fastBurn-->
+        <scene sceneID="iwk-sj-ho5">
+            <objects>
+                <controller identifier="fastBurn" backgroundImage="insgalaxy" id="NaT-uL-3f1" customClass="fastBurn" customModule="Applemint">
+                    <items>
+                        <label width="136" height="147.5" alignment="left" id="DRx-fV-xWE"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="344"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ApplemintWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
